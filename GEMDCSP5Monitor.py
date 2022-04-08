@@ -220,8 +220,6 @@ def main():
    if not os.path.exists(dir_path+"/OutputFiles"):
        os.makedirs(dir_path+"/OutputFiles")
    dirStringSave = dir_path+"/OutputFiles/P5_GEM_"+monitorFlag+"_monitor_UTC_start_"+start+"_end_"+end+"/"
-   if not os.path.exists(dirStringSave):
-       os.makedirs(dirStringSave)
 
    fileName = dir_path+"/OutputFiles/P5_GEM_"+monitorFlag+"_monitor_UTC_start_"+start+"_end_"+end+".root" 
    f1=ROOT.TFile(fileName,"RECREATE")
